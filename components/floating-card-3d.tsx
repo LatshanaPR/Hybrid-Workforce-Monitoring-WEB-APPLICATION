@@ -53,10 +53,10 @@ export function FloatingCard3D({
   }, [])
 
   const colorClasses: Record<string, string> = {
-    primary: "from-blue-100/15 via-blue-200/8 to-transparent border-blue-300/30",
-    success: "from-teal-100/15 via-cyan-200/8 to-transparent border-teal-300/30",
-    warning: "from-amber-100/15 via-orange-200/8 to-transparent border-amber-300/30",
-    danger: "from-red-100/15 via-rose-200/8 to-transparent border-red-300/30",
+    primary: "from-blue-200/40 via-blue-300/25 to-blue-100/15 border-blue-400/50",
+    success: "from-teal-200/40 via-cyan-300/25 to-teal-100/15 border-teal-400/50",
+    warning: "from-amber-200/40 via-orange-300/25 to-amber-100/15 border-amber-400/50",
+    danger: "from-red-200/40 via-rose-300/25 to-red-100/15 border-red-400/50",
   }
 
   return (
@@ -65,7 +65,7 @@ export function FloatingCard3D({
       style={{
         animation: `floatUp 0.8s ease-out ${delay}s both`,
       }}
-      className={`rounded-2xl border bg-gradient-to-br ${colorClasses[color]} shadow-lg hover:shadow-xl transform transition-all duration-300 will-change-transform backdrop-blur-sm hover:border-white/50`}
+      className={`rounded-2xl border bg-gradient-to-br ${colorClasses[color]} shadow-xl hover:shadow-2xl transform transition-all duration-300 will-change-transform backdrop-blur-md hover:border-white/70`}
     >
       <style>{`
         @keyframes floatUp {
@@ -82,7 +82,7 @@ export function FloatingCard3D({
       
       <Card className="border-0 bg-transparent">
         <CardHeader className="flex flex-row items-center justify-between pb-2">
-          <CardTitle className="text-sm font-medium text-slate-400">
+          <CardTitle className="text-sm font-bold text-white/80">
             {title}
           </CardTitle>
           {icon && (
@@ -92,7 +92,7 @@ export function FloatingCard3D({
           )}
         </CardHeader>
         <CardContent>
-          <p className="text-2xl font-bold text-slate-100">{value}</p>
+          <p className="text-3xl font-extrabold text-white">{value}</p>
         </CardContent>
       </Card>
     </div>

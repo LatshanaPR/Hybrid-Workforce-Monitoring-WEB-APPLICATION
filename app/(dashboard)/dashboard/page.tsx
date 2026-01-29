@@ -56,10 +56,10 @@ export default function DashboardPage() {
       {/* Status Cards Row - 3D Floating */}
       <div className="mb-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {/* Status Card - Custom Interactive */}
-        <div className="rounded-2xl border bg-gradient-to-br from-blue-100/20 via-blue-50/10 to-transparent border-blue-200/40 shadow-lg hover:shadow-lg hover:border-blue-300/50 transform transition-all duration-300 will-change-transform backdrop-blur-sm">
+        <div className="rounded-2xl border bg-gradient-to-br from-blue-200/40 via-blue-300/25 to-blue-100/15 border-blue-400/50 shadow-xl hover:shadow-2xl transform transition-all duration-300 will-change-transform backdrop-blur-md">
           <Card className="border-0 bg-transparent">
             <CardHeader className="flex flex-row items-center justify-between pb-2">
-              <CardTitle className="text-sm font-bold text-white/70">
+              <CardTitle className="text-sm font-bold text-white/80">
                 Status
               </CardTitle>
               <div className={cn("h-4 w-4 rounded-full shadow-md animate-pulse", statusColors[status])} />
@@ -69,7 +69,7 @@ export default function DashboardPage() {
                 <select
                   value={status}
                   onChange={(e) => setStatus(e.target.value as Status)}
-                  className="cursor-pointer border-0 bg-transparent text-xl font-bold text-white outline-none"
+                  className="cursor-pointer border-0 bg-transparent text-3xl font-extrabold text-white outline-none"
                 >
                   <option value="Available">Available</option>
                   <option value="Idle">Idle</option>
