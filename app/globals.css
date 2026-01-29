@@ -4,48 +4,48 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Deep Blue & Teal Enterprise Theme */
-  --background: oklch(0.94 0.01 260);
-  --foreground: oklch(0.15 0.02 260);
-  --card: oklch(0.96 0.01 260);
-  --card-foreground: oklch(0.15 0.02 260);
-  --popover: oklch(0.96 0.01 260);
-  --popover-foreground: oklch(0.15 0.02 260);
-  --primary: oklch(0.5 0.12 260);
+  /* White & Light Theme */
+  --background: oklch(0.98 0.001 0);
+  --foreground: oklch(0.25 0.01 260);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.2 0.01 260);
+  --popover: oklch(0.98 0.001 0);
+  --popover-foreground: oklch(0.2 0.01 260);
+  --primary: oklch(0.45 0.13 260);
   --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.88 0.02 260);
-  --secondary-foreground: oklch(0.25 0.04 260);
-  --muted: oklch(0.92 0.01 260);
-  --muted-foreground: oklch(0.45 0.02 260);
-  --accent: oklch(0.52 0.11 280);
+  --secondary: oklch(0.92 0.01 260);
+  --secondary-foreground: oklch(0.25 0.02 260);
+  --muted: oklch(0.88 0.01 260);
+  --muted-foreground: oklch(0.4 0.01 260);
+  --accent: oklch(0.5 0.12 280);
   --accent-foreground: oklch(1 0 0);
-  --destructive: oklch(0.55 0.2 25);
+  --destructive: oklch(0.6 0.2 25);
   --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.86 0.02 260);
-  --input: oklch(0.90 0.01 260);
-  --ring: oklch(0.5 0.12 260);
-  --chart-1: oklch(0.5 0.12 260);
-  --chart-2: oklch(0.52 0.11 280);
+  --border: oklch(0.92 0.01 260);
+  --input: oklch(0.96 0.001 260);
+  --ring: oklch(0.45 0.13 260);
+  --chart-1: oklch(0.45 0.13 260);
+  --chart-2: oklch(0.5 0.12 280);
   --chart-3: oklch(0.55 0.11 200);
   --chart-4: oklch(0.6 0.1 220);
-  --chart-5: oklch(0.55 0.2 25);
+  --chart-5: oklch(0.6 0.2 25);
   --radius: 0.75rem;
   
-  /* Sidebar - Deep Navy Blue */
-  --sidebar: oklch(0.25 0.08 260);
-  --sidebar-foreground: oklch(0.93 0 0);
-  --sidebar-primary: oklch(0.52 0.11 280);
+  /* Sidebar - Light Blue */
+  --sidebar: oklch(0.92 0.01 260);
+  --sidebar-foreground: oklch(0.2 0.01 260);
+  --sidebar-primary: oklch(0.45 0.13 260);
   --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.4 0.1 260);
-  --sidebar-accent-foreground: oklch(1 0 0);
-  --sidebar-border: oklch(0.35 0.08 260);
-  --sidebar-ring: oklch(0.52 0.11 280);
+  --sidebar-accent: oklch(0.88 0.02 260);
+  --sidebar-accent-foreground: oklch(0.2 0.01 260);
+  --sidebar-border: oklch(0.88 0.01 260);
+  --sidebar-ring: oklch(0.45 0.13 260);
   
-  /* Status Colors - Teal & Blue Tones */
-  --status-online: oklch(0.6 0.12 200);
-  --status-idle: oklch(0.68 0.1 230);
-  --status-offline: oklch(0.4 0.08 260);
-  --status-leave: oklch(0.55 0.2 25);
+  /* Status Colors - Bright & Distinct */
+  --status-online: oklch(0.6 0.15 150);
+  --status-idle: oklch(0.7 0.12 85);
+  --status-offline: oklch(0.5 0.08 260);
+  --status-leave: oklch(0.6 0.18 25);
 }
 
 @theme inline {
