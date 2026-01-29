@@ -70,8 +70,8 @@ export default function AttendancePage() {
     <div className="p-6 lg:p-8 relative z-10">
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-2xl font-bold text-slate-100">Availability & Attendance</h1>
-        <p className="mt-1 text-slate-400">
+        <h1 className="text-2xl font-bold text-white">Availability & Attendance</h1>
+        <p className="mt-1 text-white/80">
           Manage your status and view attendance history
         </p>
       </div>
@@ -81,7 +81,7 @@ export default function AttendancePage() {
         {/* Availability Status */}
         <Card className="border-0 shadow-lg bg-gradient-to-br from-blue-100/20 to-blue-50/10 border border-blue-200/30 backdrop-blur-sm">
           <CardHeader>
-            <CardTitle className="text-lg font-semibold text-slate-100">Availability Status</CardTitle>
+            <CardTitle className="text-lg font-semibold text-white">Availability Status</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="flex flex-wrap gap-3">
@@ -108,7 +108,7 @@ export default function AttendancePage() {
             </div>
 
             <div className="mt-6 rounded-xl bg-gradient-to-br from-blue-100/15 to-blue-50/10 border border-blue-200/30 p-4">
-              <p className="text-sm text-slate-400 font-bold">Current Status</p>
+              <p className="text-sm text-white/80 font-bold">Current Status</p>
               <div className="mt-2 flex items-center gap-2">
                 <Circle
                   className={cn(
@@ -116,7 +116,7 @@ export default function AttendancePage() {
                     statusColors[currentStatus].text
                   )}
                 />
-                <span className="text-lg font-bold text-slate-100">
+                <span className="text-lg font-bold text-white">
                   {currentStatus}
                 </span>
               </div>
@@ -127,7 +127,7 @@ export default function AttendancePage() {
         {/* Login/Logout */}
         <Card className="border-0 shadow-lg bg-gradient-to-br from-blue-100/20 to-blue-50/10 border border-blue-200/30 backdrop-blur-sm">
           <CardHeader>
-            <CardTitle className="text-lg font-semibold text-slate-100">Session Control</CardTitle>
+            <CardTitle className="text-lg font-semibold text-white">Session Control</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="flex gap-4">
@@ -154,14 +154,14 @@ export default function AttendancePage() {
 
             <div className="mt-6 grid grid-cols-2 gap-4">
               <div className="rounded-xl bg-gradient-to-br from-blue-100/15 to-blue-50/10 border border-blue-200/30 p-4">
-                <p className="text-sm text-slate-400 font-bold">Login Time</p>
-                <p className="mt-1 text-lg font-bold text-slate-100">
+                <p className="text-sm text-white/80 font-bold">Login Time</p>
+                <p className="mt-1 text-lg font-bold text-white">
                   {isLoggedIn ? "09:15 AM" : "—"}
                 </p>
               </div>
               <div className="rounded-xl bg-gradient-to-br from-blue-100/15 to-blue-50/10 border border-blue-200/30 p-4">
-                <p className="text-sm text-slate-400 font-bold">Session Duration</p>
-                <p className="mt-1 text-lg font-bold text-slate-100">
+                <p className="text-sm text-white/80 font-bold">Session Duration</p>
+                <p className="mt-1 text-lg font-bold text-white">
                   {isLoggedIn ? "4h 35m" : "—"}
                 </p>
               </div>
@@ -173,17 +173,17 @@ export default function AttendancePage() {
       {/* Attendance Table */}
       <Card className="border-0 shadow-lg bg-gradient-to-br from-blue-100/20 to-blue-50/10 border border-blue-200/30 backdrop-blur-sm">
         <CardHeader>
-          <CardTitle className="text-lg font-semibold text-slate-100">Attendance History</CardTitle>
+          <CardTitle className="text-lg font-semibold text-white">Attendance History</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="overflow-x-auto">
             <Table>
               <TableHeader>
                 <TableRow className="hover:bg-transparent border-b border-blue-200/30">
-                  <TableHead className="font-bold text-slate-100">Date</TableHead>
-                  <TableHead className="font-bold text-slate-100">Login Time</TableHead>
-                  <TableHead className="font-bold text-slate-100">Logout Time</TableHead>
-                  <TableHead className="font-bold text-slate-100">Status</TableHead>
+                  <TableHead className="font-bold text-white">Date</TableHead>
+                  <TableHead className="font-bold text-white">Login Time</TableHead>
+                  <TableHead className="font-bold text-white">Logout Time</TableHead>
+                  <TableHead className="font-bold text-white">Status</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
@@ -192,9 +192,9 @@ export default function AttendancePage() {
                   const StatusIcon = styles.icon
                   return (
                     <TableRow key={index} className="border-b border-blue-200/30 hover:bg-blue-100/10">
-                      <TableCell className="font-bold text-slate-100">{record.date}</TableCell>
-                      <TableCell className="text-slate-200">{record.loginTime}</TableCell>
-                      <TableCell className="text-slate-200">{record.logoutTime}</TableCell>
+                      <TableCell className="font-bold text-white">{record.date}</TableCell>
+                      <TableCell className="text-white/90">{record.loginTime}</TableCell>
+                      <TableCell className="text-white/90">{record.logoutTime}</TableCell>
                       <TableCell>
                         <span
                           className={cn(

@@ -47,8 +47,8 @@ export default function DashboardPage() {
     <div className="p-6 lg:p-8 relative z-10">
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-slate-100">Welcome back, John</h1>
-        <p className="mt-1 text-slate-400">
+        <h1 className="text-3xl font-bold text-white">Welcome back, John</h1>
+        <p className="mt-1 text-white/80">
           Here is your workforce overview for today
         </p>
       </div>
@@ -59,7 +59,7 @@ export default function DashboardPage() {
         <div className="rounded-2xl border bg-gradient-to-br from-blue-100/20 via-blue-50/10 to-transparent border-blue-200/40 shadow-lg hover:shadow-lg hover:border-blue-300/50 transform transition-all duration-300 will-change-transform backdrop-blur-sm">
           <Card className="border-0 bg-transparent">
             <CardHeader className="flex flex-row items-center justify-between pb-2">
-              <CardTitle className="text-sm font-medium text-slate-400">
+              <CardTitle className="text-sm font-bold text-white/70">
                 Status
               </CardTitle>
               <div className={cn("h-4 w-4 rounded-full shadow-md animate-pulse", statusColors[status])} />
@@ -69,7 +69,7 @@ export default function DashboardPage() {
                 <select
                   value={status}
                   onChange={(e) => setStatus(e.target.value as Status)}
-                  className="cursor-pointer border-0 bg-transparent text-xl font-bold text-slate-100 outline-none"
+                  className="cursor-pointer border-0 bg-transparent text-xl font-bold text-white outline-none"
                 >
                   <option value="Available">Available</option>
                   <option value="Idle">Idle</option>
